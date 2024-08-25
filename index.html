@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -29,7 +29,6 @@
           <a class="logo header-logo" href="./index.html"
             >Web<span class="logo-span">Studio</span></a
           >
-
           <ul class="nav-list">
             <li>
               <a class="nav-link current" href="./index.html">Studio</a>
@@ -57,13 +56,32 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-button is-open" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+        <div class="mob-menu" data-menu>
+          <div class="container mob-menu-container">
+            <button class="button-menu-close" data-menu-close></button>
+
+            <nav class="mob-menu-nav">Navigation</nav>
+
+            <address>Address</address>
+
+            <div>Soc link</div>
+          </div>
+        </div>
       </div>
     </header>
+
     <!-- #endregion header -->
 
     <main>
       <!-- #region hero -->
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
@@ -74,7 +92,7 @@
       <!-- #endregion hero -->
 
       <!-- #region desc -->
-      <section class="desc section">
+      <section class="desc section hidden">
         <div class="container">
           <h2 class="visually-hidden">content</h2>
 
@@ -136,14 +154,18 @@
       <!-- #endregion desc -->
 
       <!-- #region team -->
-      <section class="team section">
+      <section class="team section hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <!-- team 1 -->
             <li class="team-item">
               <img
-                src="./images/team-1.jpg"
+                srcset="
+                  ./images/team/team1.jpg    1x,
+                  ./images/team/team1@2x.jpg 2x
+                "
+                src="./images/team/team1.jpg"
                 alt="Product Designer"
                 width="264"
                 height="260"
@@ -187,7 +209,11 @@
             <!-- team 2 -->
             <li class="team-item">
               <img
-                src="./images/team-2.jpg"
+                srcset="
+                  ./images/team/team2.jpg    1x,
+                  ./images/team/team2@2x.jpg 2x
+                "
+                src="./images/team/team2.jpg"
                 alt="Frontend Developer"
                 width="264"
                 height="260"
@@ -231,7 +257,11 @@
             <!-- team 3 -->
             <li class="team-item">
               <img
-                src="./images/team-3.jpg"
+                srcset="
+                  ./images/team/team3.jpg    1x,
+                  ./images/team/team3@2x.jpg 2x
+                "
+                src="./images/team/team3.jpg"
                 alt="Marketing"
                 width="264"
                 height="260"
@@ -275,7 +305,11 @@
             <!-- team 4 -->
             <li class="team-item">
               <img
-                src="./images/team-4.jpg"
+                srcset="
+                  ./images/team/team4.jpg    1x,
+                  ./images/team/team4@2x.jpg 2x
+                "
+                src="./images/team/team4.jpg"
                 alt="UI Designer"
                 width="264"
                 height="260"
@@ -322,7 +356,7 @@
       <!-- #endregion team -->
 
       <!-- #region portfolio -->
-      <section class="portfolio section">
+      <section class="portfolio section hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
 
@@ -330,7 +364,11 @@
             <li class="portfolio-item">
               <div class="cover">
                 <img
-                  src="./images/Portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio1.jpg    1x,
+                    ./images/portfolio/portfolio1@2x.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio1.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -350,7 +388,11 @@
             <li class="portfolio-item">
               <div class="cover">
                 <img
-                  src="./images/Portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio2.jpg    1x,
+                    ./images/portfolio/portfolio2@2x.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio2.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -370,7 +412,11 @@
             <li class="portfolio-item">
               <div class="cover">
                 <img
-                  src="./images/Portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio3.jpg    1x,
+                    ./images/portfolio/portfolio3@2x.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio3.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -390,7 +436,11 @@
             <li class="portfolio-item">
               <div class="cover">
                 <img
-                  src="./images/Portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio4.jpg    1x,
+                    ./images/portfolio/portfolio4@2x.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio4.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -410,7 +460,11 @@
             <li class="portfolio-item">
               <div class="cover">
                 <img
-                  src="./images/Portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio5.jpg    1x,
+                    ./images/portfolio/portfolio5@2x.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio5.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -430,7 +484,11 @@
             <li class="portfolio-item">
               <div class="cover">
                 <img
-                  src="./images/Portfolio-6.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio6.jpg    1x,
+                    ./images/portfolio/portfolio6@2x.jpg 2x
+                  "
+                  src="./images/portfolio/portfolio6.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -454,7 +512,7 @@
 
     <!-- #region footer -->
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-container">
         <div class="footer-content">
           <a class="logo footer-logo" href="./index.html"
@@ -524,7 +582,7 @@
 
     <!-- #region modal -->
 
-    <div class="backdrop is-open" data-modal>
+    <div class="backdrop is-open hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
@@ -611,6 +669,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
     <!-- #endregion backdrop -->
   </body>
