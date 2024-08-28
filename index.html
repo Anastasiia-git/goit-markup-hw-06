@@ -57,6 +57,7 @@
           </ul>
         </address>
 
+        <!--- mob-menu  --->
         <button class="burger-button is-open" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
@@ -65,13 +66,73 @@
 
         <div class="mob-menu" data-menu>
           <div class="container mob-menu-container">
-            <button class="button-menu-close" data-menu-close></button>
+            <button class="button-menu-close" data-menu-close>
+              <svg class="close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
 
-            <nav class="mob-menu-nav">Navigation</nav>
+            <nav class="mob-menu-nav">
+              <ul class="mob-nav">
+                <li>
+                  <a class="mob-link current" href="./index.html">Studio</a>
+                </li>
+                <li>
+                  <a class="mob-link" href="">Portfolio</a>
+                </li>
+                <li>
+                  <a class="mob-link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
 
-            <address>Address</address>
+            <address class="mob-address">
+              <ul class="mob-address-list">
+                <li class="mob-address-item">
+                  <a class="mob-address-link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-address-item">
+                  <a class="mob-address-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
 
-            <div>Soc link</div>
+            <div>
+              <ul class="list-icons mob-list">
+                <li class="team-icons">
+                  <a class="icons-link" href="">
+                    <svg class="icons" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-icons">
+                  <a class="icons-link">
+                    <svg class="icons" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-icons">
+                  <a class="icons-link" href="">
+                    <svg class="icons" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-icons">
+                  <a class="icons-link" href="">
+                    <svg class="icons" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -81,7 +142,7 @@
 
     <main>
       <!-- #region hero -->
-      <section class="hero hidden">
+      <section class="hero">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
@@ -92,7 +153,7 @@
       <!-- #endregion hero -->
 
       <!-- #region desc -->
-      <section class="desc section hidden">
+      <section class="desc section">
         <div class="container">
           <h2 class="visually-hidden">content</h2>
 
@@ -154,7 +215,7 @@
       <!-- #endregion desc -->
 
       <!-- #region team -->
-      <section class="team section hidden">
+      <section class="team section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -356,10 +417,9 @@
       <!-- #endregion team -->
 
       <!-- #region portfolio -->
-      <section class="portfolio section hidden">
+      <section class="portfolio section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
-
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="cover">
@@ -512,7 +572,7 @@
 
     <!-- #region footer -->
 
-    <footer class="footer hidden">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-content">
           <a class="logo footer-logo" href="./index.html"
@@ -582,7 +642,7 @@
 
     <!-- #region modal -->
 
-    <div class="backdrop is-open hidden" data-modal>
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
@@ -659,8 +719,10 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="checkbox-link" href="">Privacy Policy</a>
+              <span class="span-policy">
+                I accept the terms and conditions of the
+                <a class="checkbox-link" href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button class="hero-button" type="submit">Send</button>
